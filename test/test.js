@@ -2,7 +2,7 @@
 'use strict';
 
 var request = require("supertest"),
-    expect = require('expect.js');
+    expect = require('expect.js'),
     app = require("../app").getApp;
 
 describe('GET /', function(){
