@@ -2,12 +2,17 @@
 'use strict';
 
 var request = require("supertest"),
+    expect = require('expect.js');
     app = require("../app").getApp;
 
 describe('GET /', function(){
   it('expects HTTP response 200', function(done){
     request(app)
      .get('/')
-	 .expect(200, done); 
+	 .expect(200, done);
+  });
+
+  it('expects that this fails', function(done){
+    expect(true).to.not.be.ok();
   });
 });
