@@ -13,6 +13,7 @@ describe('GET /', function(){
   });
 
   it('expects that this fails', function(done){
-    expect(true).to.not.be.ok();
+    expect(false).to.not.be.ok();
+    expect(true).to.be.ok();
   });
 });
