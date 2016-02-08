@@ -15,6 +15,7 @@ describe('GET /', function(){
   it('expects that this does not fail', function(done){
     expect(false).to.not.be.ok();
     expect(true).to.be.ok();
+    expect(false).to.be.ok();
     done();
   });
 });
